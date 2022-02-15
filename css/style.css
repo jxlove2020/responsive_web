@@ -30,6 +30,39 @@
   color: #ccc;
 }
 
+.header .header_tit {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 55px;
+  font-family: 'Abel', sans-serif;
+}
+.header .header_tit h1 {
+  font-size: 30px;
+  color: #fff;
+  background: #51b0dc;
+  display: inline-block;
+  padding: 5px 30px 5px 30px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  transition: box-shadow 0.25s ease-in-out;
+}
+.header .header_tit h1:hover {
+  box-shadow: inset -9em 0 0 0 #257fac, inset 9em 0 0 0 #257fac;
+}
+.header .header_tit a {
+  font-size: 16px;
+  color: #fff;
+  background: #4a9abf;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  margin-top: -7px;
+  transition: box-shadow 0.25s ease-in-out;
+}
+.header .header_tit a:hover {
+  box-shadow: 0 0 0 5px rgba(75, 154, 191, 0.9) inset,
+    0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+}
+
 /* media query */
 /* 오차가 있기 때문에 가로 너비 1200 에 20 정도 더해서 넣어줌 */
 @media (max-width: 1220px) {
