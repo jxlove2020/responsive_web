@@ -10,6 +10,31 @@ body {
 #title {
   background-color: #eaf7fd;
 }
+#contents .container {
+  position: relative;
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+}
+#cont_left {
+  float: left;
+  width: 250px;
+}
+#cont_center {
+  overflow: hidden;
+  min-height: 1300px;
+  margin-right: 250px;
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+}
+#cont_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 250px;
+}
+#footer {
+  border-top: 1px solid #dbdbdb;
+}
 
 /* 컨테이너 */
 .container {
@@ -221,6 +246,33 @@ body {
     0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 
+/* 컨텐츠 영역 */
+.column {
+  padding: 15px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.column.col1 {
+}
+.column.col2 {
+}
+.column.col3 {
+  border-bottom: 0;
+}
+.column.col4 {
+}
+.column.col5 {
+}
+.column.col6 {
+  border-bottom: 0;
+}
+.column.col7 {
+}
+.column.col8 {
+}
+.column.col9 {
+  border-bottom: 0;
+}
+
 /* media query */
 /* 오차가 있기 때문에 가로 너비 1200 에 20 정도 더해서 넣어줌 */
 /* 화면 너비 0 ~ 1220px */
@@ -231,6 +283,10 @@ body {
   .row {
     padding: 0 15px;
   }
+  #contents .container {
+    border: 0;
+  }
+
   .title .btn {
     right: 5px;
   }
@@ -242,6 +298,16 @@ body {
 
 /* 화면 너비 0 ~ 960px */
 @media (max-width: 960px) {
+  #cont_right {
+    position: static;
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+  }
+  #cont_center {
+    margin-right: 0;
+    border-right: 0;
+  }
+
   .nav > div {
     float: none;
     width: 100%;
@@ -262,6 +328,13 @@ body {
 
 /* 화면 너비 0 ~ 768px */
 @media (max-width: 768px) {
+  #cont_left {
+    float: none;
+    width: 100%;
+  }
+  #cont_center {
+    border-left: 0;
+  }
 }
 
 /* 화면 너비 0 ~ 600px */
