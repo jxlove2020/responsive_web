@@ -152,6 +152,7 @@
 .nav > div:last-child li {
   width: 100%;
 }
+/* 리스트 앞의 동그란 점 모양 그려줌 */
 .nav > div li:before {
   content: '';
   width: 3px;
