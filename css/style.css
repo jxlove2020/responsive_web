@@ -285,6 +285,32 @@ body {
   border-bottom: 0;
 }
 
+/* 메뉴 */
+.menu {
+}
+.menu li {
+  position: relative;
+}
+.menu li a {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #878787;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px;
+  display: block;
+  transition: box-shadow 0.34s ease, background 0.34s ease;
+}
+.menu li a i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.menu li a:hover {
+  box-shadow: inset 180px 0 0 0 rgba(36, 130, 174, 0.7);
+  color: #fff;
+  background: rgba(36, 130, 174, 0.9);
+}
+
 /* media query */
 /* 오차가 있기 때문에 가로 너비 1200 에 20 정도 더해서 넣어줌 */
 /* 화면 너비 0 ~ 1220px */
