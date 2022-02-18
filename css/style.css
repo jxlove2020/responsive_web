@@ -169,6 +169,24 @@
   font-weight: bold;
   margin-bottom: 4px;
 }
+/* 전체메뉴 리스트 마우스 오버 라인 효과 */
+.nav > div li a {
+  position: relative;
+}
+.nav > div li a:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: #25aad0;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav > div li:hover a:after {
+  width: 100%;
+}
 
 /* media query */
 /* 오차가 있기 때문에 가로 너비 1200 에 20 정도 더해서 넣어줌 */
