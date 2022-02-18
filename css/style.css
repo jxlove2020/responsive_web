@@ -102,6 +102,7 @@
   opacity: 0;
   transition: all 0.3s ease;
 }
+/* 도움말의 뾰족한 삼각형 부분 */
 .header .header_icon li a span:before {
   content: '';
   position: absolute;
@@ -112,10 +113,12 @@
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
 }
+/* 도움말 영역 -33px 만큼 위로 올리기 */
 .header .header_icon li a:hover span {
   opacity: 1;
   top: -33px;
 }
+/* 아이콘 box-shadow로 경계선 그려주기 */
 .header .header_icon li a:hover {
   box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset,
     0 0 0 100px rgba(0, 0, 0, 0.1) inset;
