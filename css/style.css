@@ -418,7 +418,7 @@ body {
   padding-top: 5px;
 }
 .blog3 .img-retina {
-  background: url('../img/blog3_@1.jpg');
+  background: url('../img/blog4_@1.jpg');
   background-size: cover;
 }
 /* 고해상도 이미지 나올 수 있도록 설정 */
@@ -426,14 +426,14 @@ body {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 2dppx) {
   .blog3 .img-retina {
-    background: url('../img/blog3_@2.jpg');
+    background: url('../img/blog4_@2.jpg');
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 3),
   only screen and (min-device-pixel-ratio: 3),
   only screen and (min-resolution: 3dppx) {
   .blog3 .img-retina {
-    background: url('../img/blog3_@3.jpg');
+    background: url('../img/blog4_@3.jpg');
   }
 }
 
