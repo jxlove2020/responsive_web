@@ -388,6 +388,25 @@ body {
   font-size: 10px;
 }
 
+/* 블로그 1 */
+.blog1 img {
+  width: 100%;
+}
+.blog1 .img-retina {
+  display: none;
+}
+/* 고해상도 이미지 나올 수 있도록 설정 */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx) {
+  .blog1 .img-retina {
+    display: initial;
+  }
+  .blog1 .img-normal {
+    display: none;
+  }
+}
+
 /* media query */
 /* 오차가 있기 때문에 가로 너비 1200 에 20 정도 더해서 넣어줌 */
 /* 화면 너비 0 ~ 1220px */
