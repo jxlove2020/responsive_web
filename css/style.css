@@ -311,6 +311,32 @@ body {
   background: rgba(36, 130, 174, 0.9);
 }
 
+/* 게시판1 */
+.notice1 h5 {
+  font-size: 14px;
+  color: #2f7fa6;
+  padding-bottom: 5px;
+}
+/* 게시판 리스트 에서 한 줄 효과 적용 */
+.notice1 li {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+/* 리스트 불릿 기호 */
+.notice1 li:before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #449ce2;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
 /* media query */
 /* 오차가 있기 때문에 가로 너비 1200 에 20 정도 더해서 넣어줌 */
 /* 화면 너비 0 ~ 1220px */
