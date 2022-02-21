@@ -108,6 +108,15 @@ h6 {
   text-indent: -9999px;
 }
 
+/* 반응형 */
+img {
+  width: 100%;
+}
+/* 버튼 초기화 */
+button {
+  border: 0;
+}
+
 /* margin, padding */
 .mt10 {
   margin-top: 10px !important;

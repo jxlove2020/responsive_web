@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/slick.css" />
 
     <!-- Facebook meta tags -->
     <meta property="og:type" content="article" />
@@ -381,11 +382,50 @@
           <section id="cont_center">
             <h3 class="ir_su">반응형 사이트 가운데 컨텐츠</h3>
             <article class="column col4">
-              <h4 class="col_tit">Title</h4>
-              <p class="col_desc">이 곳은 설명 부분입니다.</p>
-              <!-- -->
-
-              <!-- // -->
+              <h4 class="col_tit">Slick Slider</h4>
+              <p class="col_desc">
+                slick.js를 이용한 이미지 슬라이드 효과입니다.
+              </p>
+              <!-- 이미지 슬라이드 -->
+              <div class="slider">
+                <div>
+                  <figure>
+                    <img src="img/slider01.jpg" alt="이미지1" />
+                    <figcaption>
+                      <em>Responsive Site1</em
+                      ><span
+                        >슬라이드 플러그인을 이용한 반응형 이미지 슬라이드
+                        입니다.</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div>
+                <div>
+                  <figure>
+                    <img src="img/slider02.jpg" alt="이미지2" />
+                    <figcaption>
+                      <em>Responsive Site2</em
+                      ><span
+                        >슬라이드 플러그인을 이용한 반응형 이미지 슬라이드
+                        입니다.</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div>
+                <div>
+                  <figure>
+                    <img src="img/slider03.jpg" alt="이미지3" />
+                    <figcaption>
+                      <em>Responsive Site3</em
+                      ><span
+                        >슬라이드 플러그인을 이용한 반응형 이미지 슬라이드
+                        입니다.</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <!-- //이미지 슬라이드 -->
             </article>
             <!-- //col4 -->
             <article class="column col5">
@@ -445,12 +485,30 @@
     <!-- JavaScript Libraries -->
     <script src="js/jquery.min_1.12.4.js"></script>
     <script src="js/modernizr-custom.js"></script>
+    <script src="js/slick.min.js"></script>
 
     <script>
-      //http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}
-      //http://twitter.com/intent/tweet?text={페이지 제목}&url={페이지링크}
-      //https://share.naver.com/web/shareView.nhn?url={페이지링크}&title={페이지 제목}
-      //https://plus.google.com/share?url={페이지링크}&t={페이지 제목}
+      //이미지 슬라이더
+      $('.slider').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              autoplay: false,
+            },
+          },
+        ],
+      });
+
+      // sns 공유하기
+      // http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}
+      // http://twitter.com/intent/tweet?text={페이지 제목}&url={페이지링크}
+      // https://share.naver.com/web/shareView.nhn?url={페이지링크}&title={페이지 제목}
+      // https://plus.google.com/share?url={페이지링크}&t={페이지 제목}
       $('.facebook').click(function (e) {
         e.preventDefault();
         window.open(
