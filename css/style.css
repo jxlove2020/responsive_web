@@ -2,8 +2,6 @@
 body {
   background: url(../img/header_bg.jpg) repeat-x center top;
 }
-#header {
-}
 #nav {
   background-color: #f6fdff;
 }
@@ -263,31 +261,17 @@ body {
   color: #878787;
   line-height: 18px;
 }
-.column.col1 {
-}
-.column.col2 {
-}
 .column.col3 {
   border-bottom: 0;
 }
-.column.col4 {
-}
-.column.col5 {
-}
 .column.col6 {
   border-bottom: 0;
-}
-.column.col7 {
-}
-.column.col8 {
 }
 .column.col9 {
   border-bottom: 0;
 }
 
 /* 메뉴 */
-.menu {
-}
 .menu li {
   position: relative;
 }
