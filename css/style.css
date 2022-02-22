@@ -662,6 +662,24 @@ body {
   .nav > div ol {
     margin-bottom: 10px;
   }
+
+  /* 사이드 바 */
+  #cont_right {
+    overflow: hidden;
+  }
+  #cont_right .column {
+    float: left;
+    width: 33.3333%;
+    box-sizing: border-box;
+  }
+  #cont_right .column.col7 {
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 0;
+  }
+  #cont_right .column.col8 {
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 0;
+  }
 }
 
 /* 화면 너비 0 ~ 768px */
@@ -743,6 +761,17 @@ body {
   .square a:nth-child(5n) {
     display: block;
   }
+
+  /* 사이드 바 */
+  #cont_right .column {
+    width: 50%;
+  }
+  #cont_right .column.col8 {
+    border-right: 0;
+  }
+  #cont_right .column.col9 {
+    display: none;
+  }
 }
 
 /* 화면 너비 0 ~ 480px */
@@ -761,5 +790,12 @@ body {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
+  }
+  #cont_right .column {
+    width: 100%;
+  }
+  #cont_right .column.col7 {
+    border-right: 0;
+    border-bottom: 1px solid #dbdbdb;
   }
 }
