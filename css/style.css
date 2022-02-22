@@ -599,6 +599,33 @@ body {
   height: 100%;
 }
 
+/* 푸터 */
+.footer {
+  text-align: center;
+  padding: 30px 50px;
+}
+.footer li {
+  position: relative;
+  display: inline;
+  padding: 0 7px 0 10px;
+  white-space: nowrap;
+}
+.footer li:before {
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: #dbdbdb;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.footer li:first-child:before {
+  width: 0;
+}
+.footer address {
+  padding-top: 15px;
+}
+
 /* media query */
 /* 오차가 있기 때문에 가로 너비 1200 에 20 정도 더해서 넣어줌 */
 /* 화면 너비 0 ~ 1220px */
