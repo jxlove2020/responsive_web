@@ -667,7 +667,7 @@ body {
   z-index: -1;
 }
 
-/* 사이드 이펙트2 */
+/* 사이드 바 - 사이드 이펙트 2 */
 .side2 {
   position: relative;
   display: block;
@@ -724,6 +724,54 @@ body {
 .side2:hover .back {
   transform: rotateY(0deg);
   z-index: 1;
+}
+
+/* 사이드 바 - 사이드 이펙트 3 */
+.side3 {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.side3 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  transform: translate(350%, -50%) rotate(180deg);
+}
+.side3 figcaption:after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+.side3 figcaption h3 {
+  font-size: 16px;
+}
+.side3 figcaption em {
+  display: block;
+  font-weight: bold;
+}
+.side3 img {
+  display: block;
+  transition: all 0.3s ease;
+}
+.side3:hover img {
+  opacity: 0.4;
+}
+.side3:hover figcaption {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
 }
 
 /* media query */
